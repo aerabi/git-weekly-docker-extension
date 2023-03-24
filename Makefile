@@ -1,4 +1,4 @@
-IMAGE?=aerabi/git-weekly
+IMAGE?=gitweekly/git-weekly
 TAG?=latest
 
 BUILDER=buildx-multi-arch
