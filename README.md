@@ -7,7 +7,7 @@ The first iteration of this extension lists available issue of Git Weekly.
 ## Install
 
 ```shell
-docker extension install aerabi/git-weekly:latest
+docker extension install gitweekly/git-weekly:latest
 ```
 
 There are separate builds available for ARM or AMD architectures.
@@ -15,19 +15,19 @@ There are separate builds available for ARM or AMD architectures.
 For ARM:
 
 ```shell
-docker extension install aerabi/git-weekly:v1-arm64
+docker extension install gitweekly/git-weekly:v1-arm64
 ```
 
 For AMD:
 
 ```shell
-docker extension install aerabi/git-weekly:v1-amd64
+docker extension install gitweekly/git-weekly:v1-amd64
 ```
 
 ## Build
 
-To build the Docker image for the Docker Desktop extension:
+To build the extension and push for both ARM and AMD architectures, do:
 
 ```shell
-docker build -t aerabi/git-weekly:latest .
+bash install-and-push.sh
 ```
