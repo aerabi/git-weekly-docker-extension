@@ -22,7 +22,7 @@ RUN --mount=type=cache,target=/usr/src/app/.npm \
 COPY ui /ui
 RUN npm run build
 
-FROM alpine
+FROM alpine:3.18.3
 LABEL org.opencontainers.image.title="git-weekly" \
     org.opencontainers.image.description="A Docker extension that lists all the Git Weekly articles" \
     org.opencontainers.image.vendor="Mohammad-Ali A'rabi" \
